@@ -4,7 +4,7 @@ public class App {
   public static void main(String[] args) {
     staticFileLocation("/public");
 
-    get("/hello", (request,response) ->
+    get("/", (request,response) ->
     "<!DOCTYPE html>" +
       "<html>" +
       "<head>" +
@@ -21,6 +21,7 @@ public class App {
         "<p>Looking forward to seeing you soon. I'll bring you back a souvenir. They have chips and candy bars in the funky vending area, which would you prefer?</p>" +
         "<p>Cheers,</p>" +
         "<p>KAS</p>" +
+        "<p><a href='/photos'>P.S. Checkout the view from my living room!</a></p>" +
         "</div>" +
       "</body>" +
       "</html>"
